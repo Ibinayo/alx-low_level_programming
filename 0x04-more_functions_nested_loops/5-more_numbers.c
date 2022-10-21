@@ -2,21 +2,21 @@
 
 /**
  * more_numbers - print 0 to 14 ten times
- * Return: Always 0
+ * Return: ten times the number since 0 up to 14
  */
 void more_numbers(void)
 {
-	int num a;
+	int x, y;
 
-	for (a = 0; a <= 9; a++)
+	for (x = 0; x < 10; x++)
 	{
-		for (num = 0; a <= 14; num++)
+		for (y = 0; y <= 14; y++)
 		{
-			if (num > 9)
+			if (y > 9)
 			{
-				_putchar((num / 10) + '0');
+				_putchar((y / 10) + '0');
 			}
-			_putchar((num % 10) + '0');
+			_putchar((y % 10) + '0');
 		}
 
 		_putchar('\n');
